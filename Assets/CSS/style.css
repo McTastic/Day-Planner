@@ -30,6 +30,12 @@ textarea {
   border-radius: 15px;
 }
 
+.form-control:focus{
+  background: inherit;
+  box-shadow: 0 0 10px;
+  border: none;
+}
+
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -40,7 +46,7 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  /* border-top: 1px dashed #000000; */
 }
 
 .past {
@@ -64,9 +70,10 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  cursor: pointer;
 }
 
 .saveBtn i:hover {
-  font-size: 30px;
+  font-size: 40px;
   transition: all 0.3s ease-in-out;
 }
