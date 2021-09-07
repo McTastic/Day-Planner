@@ -46,6 +46,7 @@ function init(){
 
 // Event listener to save content to local storage
 saveBtn.on("click",function(){
+  alert("Item Saved");
   localStorage.setItem("SavedEvent1",userInput1.val());
   localStorage.setItem("SavedEvent2",userInput2.val());
   localStorage.setItem("SavedEvent3",userInput3.val());
