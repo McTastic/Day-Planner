@@ -8,10 +8,10 @@ Creator's note: If this is being used after 5pm, all fields will be in the past 
 
 ## Features
 
--Interactive design that dynamically changes colors of forms based on time of day.
--Ability to save events to local storage. 
--Ability to clear all data on the page with the "clear" button. 
--Current date and time is always displayed at the top of the page. 
+- Interactive design that dynamically changes colors of forms based on time of day.
+- Ability to save events to local storage. 
+- Ability to clear all data on the page with the "clear" button. 
+- Current date and time is always displayed at the top of the page. 
 
 ## Demo screenshot
 
