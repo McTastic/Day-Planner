@@ -15,4 +15,4 @@ Creator's note: If this is being used after 5pm, all fields will be in the past 
 
 ## Demo screenshot
 
-![demo-screenshot](./assets/images/Day_Planner_screenshot)
+![demo-screenshot](https://github.com/McTastic/Day-Planner/blob/main/Assets/Images/Day_Planner_screenshot.png?raw=true)
