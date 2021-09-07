@@ -14,12 +14,11 @@ var userInput8 = $(".4pm");
 var userInput9 = $(".5pm");
 var savedEvent;
 
+// Function to add color to each row based on time of day
 Array.from(rows).forEach((formRow) => {
   var rowIdString = formRow.id,
     rowHour;
-  // if (rowIdString) {
     rowHour = parseInt(rowIdString);
-  // }
   var formRowEl = $(formRow)
   if(currentTime === rowHour){
   formRowEl.addClass("present");
@@ -33,8 +32,6 @@ Array.from(rows).forEach((formRow) => {
   }
 });
 
-// TODO add local storage to store stuff and add event listener to save
-
 function init(){
   userInput1.val(localStorage.getItem("SavedEvent1"));
   userInput2.val(localStorage.getItem("SavedEvent2"));
@@ -45,10 +42,9 @@ function init(){
   userInput7.val(localStorage.getItem("SavedEvent7"));
   userInput8.val(localStorage.getItem("SavedEvent8"));
   userInput9.val(localStorage.getItem("SavedEvent9"));
-
 }
 
-
+// Event listener to save content to local storage
 saveBtn.on("click",function(){
   localStorage.setItem("SavedEvent1",userInput1.val());
   localStorage.setItem("SavedEvent2",userInput2.val());
@@ -61,12 +57,13 @@ saveBtn.on("click",function(){
   localStorage.setItem("SavedEvent9",userInput9.val());
 });
 
+// Clears all events on page and refreshes the page to display it
 clearBtn.on("click", function(){
   localStorage.clear();
   location.reload();
 })
 
-
+// Function for the page time at the top
 function noDelaySetInterval(func, interval) {
   func();
   return setInterval(func, interval);
