@@ -2,6 +2,7 @@ var today = $("#currentDay");
 var rows = $(".form-control");
 var currentTime = parseInt(moment().format("H"));
 var saveBtn = $(".saveBtn");
+var clearBtn = $("#clear");
 var userInput1 = $(".9am");
 var userInput2 = $(".10am");
 var userInput3 = $(".11am");
@@ -59,6 +60,11 @@ saveBtn.on("click",function(){
   localStorage.setItem("SavedEvent8",userInput8.val());
   localStorage.setItem("SavedEvent9",userInput9.val());
 });
+
+clearBtn.on("click", function(){
+  localStorage.clear();
+  location.reload();
+})
 
 
 function noDelaySetInterval(func, interval) {
